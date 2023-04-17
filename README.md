@@ -60,9 +60,9 @@ i. the loop continue untill the progrm ends
 6. General
 
 Allowed editors: vi, vim, emacs
-7. Authors:
 
- Rodgers Mogaka and Keith Koki ALX Students
+ Authors:
+           Rodgers Mogaka and Keith Koki ALX Students
 =======
 
 [FLOWCHART.odt](https://github.com/rodgersxy/simple_shell/files/11248414/FLOWCHART.odt)
