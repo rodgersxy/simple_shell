@@ -2,6 +2,7 @@
 
 Rodgers and Keith Collabration on buliding a simple shell using C programming language.
 1. flowchart
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 2. Compilation
@@ -66,3 +67,5 @@ Allowed editors: vi, vim, emacs
 
 [FLOWCHART.odt](https://github.com/rodgersxy/simple_shell/files/11248414/FLOWCHART.odt)
 >>>>>>> 6ba46f4dd47cb3b67d729a559d70e7b07a420146
+=======
+>>>>>>> 8e7d4cdc1ff36ce74705054622b7cc89c988fac4
