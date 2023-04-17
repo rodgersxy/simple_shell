@@ -3,6 +3,7 @@
 Rodgers and Keith Collabration on buliding a simple shell using C programming language.
 1. flowchart
 
+<<<<<<< HEAD
 2. Compilation
 This shell will be compiled this way:
 
@@ -61,3 +62,7 @@ Allowed editors: vi, vim, emacs
 7. Authors:
 
  Rodgers Mogaka and Keith Koki ALX Students
+=======
+
+[FLOWCHART.odt](https://github.com/rodgersxy/simple_shell/files/11248414/FLOWCHART.odt)
+>>>>>>> 6ba46f4dd47cb3b67d729a559d70e7b07a420146
