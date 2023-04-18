@@ -10,7 +10,7 @@
  */
 int main(int ac, char **av, char **env)
 {
-	char *temp = NULL, *cmd = NULL;
+	char *buffer = NULL, *command = NULL;
 	int i = 0;
 	size_t buf_size = 0;
 	ssize_t chars_readed = 0;
@@ -21,29 +21,29 @@ int main(int ac, char **av, char **env)
 	{
 		i++;
 		prompt();
-		signal(SIGNIT, handle);
-		chars_readed = getline(&temp, &buf_size, stdin);
+		signal(SIGINT, handle);
+		chars_readed = getline(&buffer, &buf_size, stdin);
 
 		if (chars_readed == EOF)
-			_EOF(temp);
-		else if (*temp == '\n')
-			free(temp);
+			_EOF(buffer);
+		else if (*buffer == '\n')
+			free(buffer);
 		else
 		{
-			temp[_strlen(temp) - 1] = '\0';
-			cmd = tokening(temp, "\0");
-			free(temp);
+			buffer[_strlen(buffer) - 1] = '\0';
+			command = tokening(buffer, "\0");
+			free(buffer);
 
-			if (_strcmp(cmd[0], "exit") != 0)
-				change_dir(cmd[1]);
+			if (_strcmp(command[0], "exit") != 0)
+				change_dir(command[1]);
 			else if
-				(_strcmp(cmd[0], "cd") != 0)
-					change_dir(cmd[1]);
+				(_strcmp(command[0], "cd") != 0)
+					change_dir(command[1]);
 			else
-				create_child(cmd, av[0], env, i);
+				create_child(command, av[0], env, i);
 		}
 		fflush(stdin);
-		temp = NULL, buf_size = 0;
+		buffer = NULL, buf_size = 0;
 	}
 	if (chars_readed == -1)
 		return (EXIT_FAILURE);
