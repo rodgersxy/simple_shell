@@ -17,6 +17,11 @@ void handle(int signals);
 void prompt(void);
 void shell_exit(char **command);
 void _EOF(char *buffer);
+int change_dir(const char *path);
+
+/*********************  PROCESSES   *****/
+
+void create_child(char **command, char *name, char **env, int max_executions);
 
 #endif
 /** END _SHELL_H****/
