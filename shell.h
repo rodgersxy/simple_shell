@@ -22,4 +22,8 @@ int change_dir(const char *path);
 
 void create_child(char **command, char *name, char **env, int max_executions);
 
+/****************** TOKENING ***************/
+
+char **tokening(char *buffer, const char *s);
+
 #endif   /** END _SHELL_H****/
