@@ -16,6 +16,9 @@ void handle(int signals);
 void prompt(void);
 void shell_exit(char **command);
 void _EOF(char *buffer);
+
+int _putchar(char c);
+
 int change_dir(const char *path);
 
 /*********************  PROCESSES   *****/
