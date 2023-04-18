@@ -1,4 +1,3 @@
-/*************************** SHELL.H  *********/
 #ifndef _SHELL_H
 #define _SHELL_H
 #include <stdio.h>
@@ -23,5 +22,4 @@ int change_dir(const char *path);
 
 void create_child(char **command, char *name, char **env, int max_executions);
 
-#endif
-/** END _SHELL_H****/
+#endif   /** END _SHELL_H****/
