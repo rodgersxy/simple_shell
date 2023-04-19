@@ -34,4 +34,12 @@ char **tokening(char *buffer, const char *s);
 int _strcmp(char *s1, char *s2);
 char *_strcpy(char *dest, char *src);
 
+/************** EXCECUTE *********************/
+
+void execute(char **command , char *name, char **env, int cc);
+void print_env(char **env);
+char **_getPATH(char **env);
+void msgerror(char *name, int cc, char **command);
+
+
 #endif   /** END _SHELL_H****/
