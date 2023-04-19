@@ -19,3 +19,21 @@ int _strcmp(char *s1, char *s2)
 
 	return (1);
 }
+
+/**
+ * _strcpy - A function that copies a string to another string
+ * @src: Apointer to string to copy from
+ * @dest: A pointer to the copied string
+ *
+ * Return: A pointer copied atring(results).
+ */
+char *_strcpy(char *dest, char *src)
+{
+	char *results = dest;
+
+	while (*src != '\0')
+		*dest++ = *src++;
+
+	*dest = '\0';
+	return (results);
+}

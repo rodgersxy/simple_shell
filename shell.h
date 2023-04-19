@@ -32,5 +32,6 @@ char **tokening(char *buffer, const char *s);
 /*******************STRING_FUNCTIONS************/
 
 int _strcmp(char *s1, char *s2);
+char *_strcpy(char *dest, char *src);
 
 #endif   /** END _SHELL_H****/
