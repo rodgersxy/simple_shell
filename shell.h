@@ -19,10 +19,11 @@ void _EOF(char *buffer);
 
 int _putchar(char c);
 
-int change_dir(const char *path);
+
 
 /*********************  PROCESSES   *****/
 
+int change_dir(const char *path);
 void create_child(char **command, char *name, char **env, int max_executions);
 
 /****************** TOKENING ***************/

@@ -6,7 +6,7 @@
  * @av: pointer to array of input arguments.
  * @env: pointer to pointer to array of environmental variables.
  *
- * Return: Always(0)
+ * Return: Always 0
  */
 int main(int ac, char **av, char **env)
 {
@@ -36,9 +36,8 @@ int main(int ac, char **av, char **env)
 
 			if (_strcmp(command[0], "exit") != 0)
 				shell_exit(command);
-			else if
-				(_strcmp(command[0], "cd") != 0)
-					change_dir(command[1]);
+			else if	(_strcmp(command[0], "cd") != 0)
+				change_dir(command[1]);
 			else
 				create_child(command, av[0], env, i);
 		}
