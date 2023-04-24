@@ -8,7 +8,7 @@
 void prompt(void)
 {
 	if (isatty(STDIN_FILENO))
-		write(STDOUT_FILENO, "My_Shell$", 10);
+		write(STDOUT_FILENO, "My_Shell$ ", 10);
 }
 
 /**
@@ -19,7 +19,7 @@ void prompt(void)
 void handle(int signals)
 {
 	(void)signals;
-	write(STDOUT_FILENO, "\nMy_Shell>> " 12);
+	write(STDOUT_FILENO, "\nMy_Shell>> ", 12);
 }
 
 /**
