@@ -31,11 +31,11 @@ int main(int ac, char **av, char **env)
 		else
 		{
 			buffer[_strlen(buffer) - 1] = '\0';
-			command = tokening(buffer, "\0");
+			command = tokening(buffer, " \0");
 			free(buffer);
 
 			if (_strcmp(command[0], "exit") != 0)
-				change_dir(command[1]);
+				shell_exit(command);
 			else if
 				(_strcmp(command[0], "cd") != 0)
 					change_dir(command[1]);
