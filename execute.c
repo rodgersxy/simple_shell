@@ -50,6 +50,33 @@ void execute(char **command, char *name, char **env, int cc)
 	}
 }
 
+/**
+ * _getPATH - a function that gives the full value from the environmental
+ * variable PATH.
+ * @env: pointer to environmental variables.
+ *
+ * Return: All tokenized pathways for commands.
+ */
+char **_getPATH(char **env)
+{
+	char *pathvalue = NULL;
+	char **pathways = NULL;
+	unsigned int i = 0;
+
+	pathvalue = strtok(env[i]. "=");
+	while (env[i])
+	{
+		if (_strcmp(pathvalue, "PATH"))
+		{
+			pathvalue = srtok(NULL, "\n");
+			pathways = tokening(pathvalue, ":");
+			return (pathways);
+		}
+		i++;
+		pathvalue = strtok(env[i], "=");
+	}
+	return (NULL);
+}
 
 
 /**
@@ -69,36 +96,6 @@ void print_env(char **env)
 		i++;
 	}
 }
-
-
-/**
- * _getPATH - a function that gets the full value from environmental
- * variable PATH.
- * @env: The pointer to environmental variables.
- *
- * Return: All tokenized pathways for commands.
- */
-char **_getPATH(char **env)
-{
-	char *pathvalue = NULL;
-	char **pathways = NULL;
-	unsigned int i = 0;
-
-	pathvalue = strtok(env[i], "=");
-	while (env[i])
-	{
-		if (_strcmp(pathvalue, "PATH"))
-		{
-			pathvalue = strtok(NULL, "\n");
-			pathways = tokening(pathvalue, ":");
-			return (pathways);
-		}
-		i++;
-		pathvalue = strtok(env[i], "=");
-	}
-	return (NULL);
-}
-
 
 /**
  * msgerror - Function that prints a message that can't be found.
