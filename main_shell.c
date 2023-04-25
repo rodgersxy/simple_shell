@@ -10,7 +10,7 @@
  */
 int main(int ac, char **av, char **env)
 {
-	char *buffer = NULL, *command = NULL;
+	char *buffer = NULL, **command = NULL;
 	int i = 0;
 	size_t buf_size = 0;
 	ssize_t chars_readed = 0;

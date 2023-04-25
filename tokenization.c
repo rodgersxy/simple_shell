@@ -30,7 +30,7 @@ char **tokening(char *buffer, const char *s)
 	}
 
 	token = strtok(buffer, s);
-	while (token == NULL)
+	while (token != NULL)
 	{
 		command[i] = malloc(_strlen(token) + 1);
 		if (command[i] == NULL)
