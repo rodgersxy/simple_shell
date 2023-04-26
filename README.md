@@ -1,11 +1,8 @@
 # simple_shell
 
 Rodgers and Keith Collabration on buliding a simple shell using C programming language.
-1. flowchart
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-2. Compilation
+#1. flowchart
+#2. Compilation
 This shell will be compiled this way:
 
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
@@ -19,7 +16,6 @@ hsh main_shell.c buffer.c  etc
 ($) exit
 $
 4. Simple Shell should:
-a. 
 (i). Display a prompt and wait for the user to type a command. A command line always ends with a new line.
 (ii). The prompt is displayed again each time a command has been executed.
 (iii). The command lines are simple, no semicolons, no pipes, no redirections or any other advanced features.
@@ -27,7 +23,7 @@ a.
 (v). If an executable cannot be found, print an error message and display the prompt again.
 (v) Handle errors.
 (vi) You have to handle the “end of file” condition (Ctrl+D)
-b. 
+
 Simple shell 0.1 +
 
 Handle command lines with arguments
@@ -36,13 +32,13 @@ Simple shell 0.2 +
 
 Handle the PATH
 fork must not be called if the command doesn’t exist
-d. 
+
 Simple shell 0.3 +
 
 Implement the exit built-in, that exits the shell
 Usage: exit
 You don’t have to handle any argument to the built-in exit
-e. 
+
 Simple shell 0.4 +
 
 Implement the env built-in, that prints the current environment

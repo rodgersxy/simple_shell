@@ -37,7 +37,7 @@ void _EOF(char *temp)
 
 	if (isatty(STDIN_FILENO))
 		write(STDOUT_FILENO, "\n", 1);
-	free(temp);
+
 	exit(EXIT_SUCCESS);
 }
 
