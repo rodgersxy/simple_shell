@@ -41,7 +41,7 @@ int main(int ac, char **av, char **env)
 			else
 				create_child(command, av[0], env, i);
 		}
-		fflush(stdin);
+		fflush(stdout);
 		buffer = NULL, buf_size = 0;
 	}
 	if (chars_readed == -1)
