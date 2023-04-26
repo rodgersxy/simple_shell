@@ -41,6 +41,7 @@ void _EOF(char *temp)
 	exit(EXIT_SUCCESS);
 }
 
+
 /**
  * shell_exit - function that exits the shell.
  * @cmd: The pointer to tokenized command.

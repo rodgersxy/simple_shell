@@ -50,4 +50,8 @@ void msgerror(char *name, int cc, char **command);
 void free_dp(char **command);
 void free_exit(char **command);
 
+
+
+
+
 #endif   /** END _SHELL_H****/
