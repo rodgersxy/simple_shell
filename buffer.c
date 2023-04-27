@@ -50,6 +50,7 @@ void _EOF(char *temp)
 void shell_exit(char **cmd)
 {
 	int sta_tus = 0;
+	char *endptr;
 
 	if (cmd[1] == NULL)
 	{
@@ -57,7 +58,17 @@ void shell_exit(char **cmd)
 		exit(EXIT_SUCCESS);
 	}
 
-	sta_tus = atoi(cmd[1]);
+	sta_tus = (int) strtol(cmd[1], &endptr, 10);
+
+	if (*endptr != '\0') /*conversion failed*/
+	{
+		fprintf(stderr, "Error: %s is not a valid integer\n", cmd[1]);
+		free_dp(cmd);
+		exit(EXIT_FAILURE);
+	}
+
 	free_dp(cmd);
 	exit(sta_tus);
 }
+
+
